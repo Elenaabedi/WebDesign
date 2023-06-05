@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+$colorblack80: rgb(70, 70, 70);
+$colorblaulogo: rgb(39, 58, 129);
+$colorblausecundari: rgb(11, 125, 214);
+$backgroundgrey: rgb(233, 233, 233);
+$whitesmoke: whitesmoke;
+$vermellVallbona: rgb(187, 0, 0);
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    color: $colorblack80;
+}
+
+body {
+    color: $colorblack80;
+}
+
+.container-fluid {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
+
+// Header
+
+.headercv{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+// Navbar
+
+.navbarcv {
+    background-color: $vermellVallbona;
+
+    div {
+        div {
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
+                        color: $whitesmoke;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                    }
+
+                    .nav-link:hover {
+                        color: $colorblack80;
+                    }
+
+                    .logout {
+                        border-left: 1px solid $whitesmoke;
+                        padding-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Section List Empreses
+
+.section-list-companies {
+
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 80px;
+
+    .div-btn-create-new {
+        display: flex;
+        justify-content: end;
+
+        .btn {
+            margin-top: 1.5vw;
+            background-color: $vermellVallbona;
+            border: 0px;
+        }
+
+        .btn:hover {
+            color: $colorblack80;
+        }
+    }
+
+    h1 {
+        font-weight: 500;
+        font-size: xx-large;
+        margin-bottom: 2vh;
+    }
+
+    table {
+        table-layout: fixed;
+
+        thead {
+            tr {
+                td {
+                    font-weight: bold;
+                }
+
+                .options {
+                    text-align: center;
+                    word-break: break-all !important;
+                    white-space: nowrap !important;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+
+                }
+
+                .colab {
+                    text-align: center;
+                    word-break: break-all !important;
+                    white-space: nowrap !important;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    width: 150px !important;
+                }
+            }
+        }
+
+        tbody {
+            overflow-y: auto;
+            width: 100%;
+
+            tr {
+                td {
+                    word-break: break-all !important;
+                    white-space: nowrap !important;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    width: 150px !important;
+
+                }
+            }
+        }
+
+    }
+
+    ul {
+        justify-content: flex-end;
+    }
+}
+
+//// Paginador 
+
+.paginator-table {
+    li {
+        padding: 10px 20px 10px 20px;
+        border: 1px solid $backgroundgrey;
+    }
+
+}
+
+.container-paginator {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 2vw;
+}
+
+// Footer
+
+footer {
+    background-color: $vermellVallbona;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    height: 60px;
+    bottom: 50px;
+
+    ul {
+        li {
+            .nav-link {
+                color: $whitesmoke;
+
+            }
+
+            .nav-link:hover {
+                color: $colorblack80;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 1453px) {
+
+    table {
+        thead {
+            tr {
+                .colab {
+                    display: none;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td:nth-child(6) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1324px) {
+
+    table {
+        thead {
+            tr {
+                td:nth-child(5) {
+                    display: none;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td:nth-child(5) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1085px) {
+
+    table {
+        thead {
+            tr {
+                td:nth-child(4) {
+                    display: none;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td:nth-child(4) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 984px) {
+
+    .navbarcv {
+    
+        div {
+            div {
+                .navbar-nav {
+                    .nav-item {
+                        .logout {
+                            border-left: 0px;
+                            padding-left: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+}
+
+@media screen and (max-width: 880px) {
+
+    table {
+        thead {
+            tr {
+                td:nth-child(3) {
+                    display: none;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td:nth-child(3) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 654px) {
+
+    table {
+        thead {
+            tr {
+                td:nth-child(3) {
+                    display: none;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td:nth-child(3) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .headercv{
+        padding: 0px;
+    }
+   
+    .section-list-companies {
+        .div-btn-create-new{
+            .btn{
+                margin-top: 3vh;
+                margin-bottom: 3vh;
+
+            }
+        }
+        table {
+            thead {
+
+                tr {
+                    td{
+                        width: 50px;
+                    }
+                    td:nth-child(2) {
+                        display: none;
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    td {
+                        width: 20px !important;
+
+                    }
+                    td:nth-child(2) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+

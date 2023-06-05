@@ -1,0 +1,15 @@
+index.html:
+1. El so s'activa al pulsar sobre el logo de LaboraSQL que apareix a la Navbar superior en blau marí al fer scroll.
+2. L'animació està present al requadres grisos de "API ADAPTABLE" i "TOT SOTA CONTROL" mostrant una transició de color gris clar a més fosc.
+3. Els links redireixen a parts de la mateixa Web excepte el Login que redirigeix a la main (La pàgina de login la fa l'Àlex).
+
+
+Main:
+1. Pàgina principal que es mostra rere fer logIn.
+2. No té efectes de so ni animacions. Aquestes es mostren en la pàgina de presentació. 
+3. El logOut hauría d'anar-se'n a la pàgina de LogIn però, donat a que aquesta pantalla la farà l'Àlex, he decidit redirigia a la pàgina de presentació.
+4. La resta de links van a cap lloc.
+5. La taula és totalment responsive però, he decidit que alguns elements desapareixin confor-me la pantalla es va adaptant i mostri els elements més rellevants en cada cas.
+
+
+

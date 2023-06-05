@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: medium;
+  color: rgb(70, 70, 70);
+}
+
+body {
+  color: rgb(70, 70, 70);
+}
+
+.container-fluid {
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+}
+
+.headercv {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbarcv {
+  background-color: rgb(187, 0, 0);
+}
+.navbarcv div div .navbar-nav .nav-item .nav-link {
+  color: whitesmoke;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.navbarcv div div .navbar-nav .nav-item .nav-link:hover {
+  color: rgb(70, 70, 70);
+}
+.navbarcv div div .navbar-nav .nav-item .logout {
+  border-left: 1px solid whitesmoke;
+  padding-left: 20px;
+}
+
+.section-list-companies {
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-bottom: 80px;
+}
+.section-list-companies .div-btn-create-new {
+  display: flex;
+  justify-content: end;
+}
+.section-list-companies .div-btn-create-new .btn {
+  margin-top: 1.5vw;
+  background-color: rgb(187, 0, 0);
+  border: 0px;
+}
+.section-list-companies .div-btn-create-new .btn:hover {
+  color: rgb(70, 70, 70);
+}
+.section-list-companies h1 {
+  font-weight: 500;
+  font-size: xx-large;
+  margin-bottom: 2vh;
+}
+.section-list-companies table {
+  table-layout: fixed;
+}
+.section-list-companies table thead tr td {
+  font-weight: bold;
+}
+.section-list-companies table thead tr .options {
+  text-align: center;
+  word-break: break-all !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.section-list-companies table thead tr .colab {
+  text-align: center;
+  word-break: break-all !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 150px !important;
+}
+.section-list-companies table tbody {
+  overflow-y: auto;
+  width: 100%;
+}
+.section-list-companies table tbody tr td {
+  word-break: break-all !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 150px !important;
+}
+.section-list-companies ul {
+  justify-content: flex-end;
+}
+
+.paginator-table li {
+  padding: 10px 20px 10px 20px;
+  border: 1px solid rgb(233, 233, 233);
+}
+
+.container-paginator {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 2vw;
+}
+
+footer {
+  background-color: rgb(187, 0, 0);
+  padding-left: 3vw;
+  padding-right: 3vw;
+  height: 60px;
+  bottom: 50px;
+}
+footer ul li .nav-link {
+  color: whitesmoke;
+}
+footer ul li .nav-link:hover {
+  color: rgb(70, 70, 70);
+}
+
+@media screen and (max-width: 1453px) {
+  table thead tr .colab {
+    display: none;
+  }
+  table tbody tr td:nth-child(6) {
+    display: none;
+  }
+}
+@media screen and (max-width: 1324px) {
+  table thead tr td:nth-child(5) {
+    display: none;
+  }
+  table tbody tr td:nth-child(5) {
+    display: none;
+  }
+}
+@media screen and (max-width: 1085px) {
+  table thead tr td:nth-child(4) {
+    display: none;
+  }
+  table tbody tr td:nth-child(4) {
+    display: none;
+  }
+}
+@media screen and (max-width: 984px) {
+  .navbarcv div div .navbar-nav .nav-item .logout {
+    border-left: 0px;
+    padding-left: 0px;
+  }
+}
+@media screen and (max-width: 880px) {
+  table thead tr td:nth-child(3) {
+    display: none;
+  }
+  table tbody tr td:nth-child(3) {
+    display: none;
+  }
+}
+@media screen and (max-width: 654px) {
+  table thead tr td:nth-child(3) {
+    display: none;
+  }
+  table tbody tr td:nth-child(3) {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .headercv {
+    padding: 0px;
+  }
+  .section-list-companies .div-btn-create-new .btn {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+  .section-list-companies table thead tr td {
+    width: 50px;
+  }
+  .section-list-companies table thead tr td:nth-child(2) {
+    display: none;
+  }
+  .section-list-companies table tbody tr td {
+    width: 20px !important;
+  }
+  .section-list-companies table tbody tr td:nth-child(2) {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style_main.css.map */

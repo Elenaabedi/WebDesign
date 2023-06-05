@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="../img/favicon/favicon-16x16.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/favicon/favicon-16x16.png" />
+    <link rel="stylesheet" href="/main/css/style_main.css" />
+    <!--Paginacion-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="js/paginacion.js"></script>
+    <title>IES Carles Vallbona</title>
+</head>
+<!--Autor: Elena Bermúdez Díaz-->
+
+<body>
+    <header id="header" class="border-bottom bg-light headercv" style="display: flex">
+        <div class="container-fluid d-flex flex-wrap justify-content-center">
+            <a href="/"
+                class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none link-logo"
+                aria-current="page">
+                <span class="fs-4"><img aria-current="page" src="../img/logo/logo_IES.png"
+                        alt="Logo IES Carles Vallbona" width="300" /></span>
+            </a>
+        </div>
+    </header>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbarcv">
+        <div class="container-fluid justify-content-end">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Empreses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Col·laboracions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link logout" href="../index.html">LogOut</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Section Llistat Empreses-->
+    <section class="section-list-companies">
+        <div class="container-flex div-btn-create-new">
+            <a class="btn btn-secondary" href="#" role="button">Afegir nova empresa</a>
+        </div>
+        <h1>LLISTAT D'EMPRESES</h1>
+        <table id="myTable" class="table table-striped table-hover" style="width: 100%">
+            <thead>
+                <tr>
+                    <td>Empresa</td>
+                    <td>Provincia</td>
+                    <td>Direcció</td>
+                    <td>Categoria</td>
+                    <td>Web</td>
+                    <td class="colab">Col·laboracions</td>
+                    <td colspan="3" class="options">Opcions</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td height="17" align="left">Luettgen-Nader</td>
+                    <td align="left">Santo Nino</td>
+                    <td align="left">6455 Westend Terrace</td>
+                    <td align="left">Basic Industries</td>
+                    <td align="left">https://bizjournals.com</td>
+                    <td align="center" sdval="22" sdnum="1033;">22</td>
+                    <td align="center">
+                        <a href="#" >+ Informació</a>
+                    </td>
+                    <td align="center">
+                        <a href="#">Edició</a>
+                    </td>
+                    <td align="center">
+                        <a href="#" >Eliminar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="17" align="left">Fay-McGlynn</td>
+                    <td align="left">Qiaosi</td>
+                    <td align="left">7588 2nd Place</td>
+                    <td align="left">Consumer Services</td>
+                    <td align="left">https://photobucket.com</td>
+                    <td align="center" sdval="8" sdnum="1033;">8</td>
+                    <td align="center"><a href="#">+ Informació</a></td>
+                    <td align="center"><a href="#">Edició</a></td>
+                    <td align="center"><a href="#">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td height="17" align="left">Prosacco Inc</td>
+                    <td align="left">Palampal</td>
+                    <td align="left">06845 Kinsman Court</td>
+                    <td align="left">n/a</td>
+                    <td align="left">http://istockphoto.com</td>
+                    <td align="center" sdval="15" sdnum="1033;">15</td>
+                    <td align="center"><a href="#">+ Informació</a></td>
+                    <td align="center"><a href="#">Edició</a></td>
+                    <td align="center"><a href="#">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td height="17" align="left">Balistreri, Parisian and Donnelly</td>
+                    <td align="left">Salegading</td>
+                    <td align="left">4542 Elka Court</td>
+                    <td align="left">Finance</td>
+                    <td align="left">https://ameblo.jp</td>
+                    <td align="center" sdval="1" sdnum="1033;">1</td>
+                    <td align="center"><a href="#">+ Informació</a></td>
+                    <td align="center"><a href="#">Edició</a></td>
+                    <td align="center"><a href="#">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td height="17" align="left">Stokes, Kassulke and Pollich</td>
+                    <td align="left">Shenzhengqiao</td>
+                    <td align="left">69888 Sugar Trail</td>
+                    <td align="left">Basic Industries</td>
+                    <td align="left">https://purevolume.com</td>
+                    <td align="center" sdval="2" sdnum="1033;">2</td>
+                    <td align="center"><a href="#">+ Informació</a></td>
+                    <td align="center"><a href="#">Edició</a></td>
+                    <td align="center"><a href="#">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td height="17" align="left">Reichel Inc</td>
+                    <td align="left">Muli</td>
+                    <td align="left">1156 Union Road</td>
+                    <td align="left">Miscellaneous</td>
+                    <td align="left">https://twitter.com</td>
+                    <td align="center" sdval="12" sdnum="1033;">12</td>
+                    <td align="center"><a href="#">+ Informació</a></td>
+                    <td align="center"><a href="#">Edició</a></td>
+                    <td align="center"><a href="#">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td height="17" align="left">Romaguera LLC</td>
+                    <td align="left">Urachiche</td>
+                    <td align="left">1 Kensington Parkway</td>
+                    <td align="left">n/a</td>
+                    <td align="left">https://wiley.com</td>
+                    <td align="center" sdval="18" sdnum="1033;">18</td>
+                    <td align="center"><a href="#">+ Informació</a></td>
+                    <td align="center"><a href="#">Edició</a></td>
+                    <td align="center"><a href="#">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td height="17" align="left">Hauck, Kovacek and Reinger</td>
+                    <td align="left">Zaragoza</td>
+                    <td align="left">0378 Delladonna Crossing</td>
+                    <td align="left">Transportation</td>
+                    <td align="left">https://indiegogo.com</td>
+                    <td align="center" sdval="39" sdnum="1033;">39</td>
+                    <td align="center"><a href="#">+ Informació</a></td>
+                    <td align="center"><a href="#">Edició</a></td>
+                    <td align="center"><a href="#">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td height="17" align="left">Harber, Reilly and Heller</td>
+                    <td align="left">Otoka</td>
+                    <td align="left">5 Monica Parkway</td>
+                    <td align="left">Consumer Non-Durables</td>
+                    <td align="left">https://t-online.de</td>
+                    <td align="center" sdval="31" sdnum="1033;">31</td>
+                    <td align="center"><a href="#">+ Informació</a></td>
+                    <td align="center"><a href="#">Edició</a></td>
+                    <td align="center"><a href="#">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td height="17" align="left">Reinger, Mayert and Wisoky</td>
+                    <td align="left">Koygorodok</td>
+                    <td align="left">4969 Oak Lane</td>
+                    <td align="left">Basic Industries</td>
+                    <td align="left">http://tiny.cc</td>
+                    <td align="center" sdval="25" sdnum="1033;">25</td>
+                    <td align="center"><a href="#">+ Informació</a></td>
+                    <td align="center"><a href="#">Edició</a></td>
+                    <td align="center"><a href="#">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td height="17" align="left">Nikolaus-Buckridge</td>
+                    <td align="left">Yutsa</td>
+                    <td align="left">5383 Clemons Trail</td>
+                    <td align="left">Health Care</td>
+                    <td align="left">https://posterous.com</td>
+                    <td align="center" sdval="47" sdnum="1033;">47</td>
+                    <td align="center"><a href="#">+ Informació</a></td>
+                    <td align="center"><a href="#">Edició</a></td>
+                    <td align="center"><a href="#">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td height="17" align="left">Harber, Reilly and Heller</td>
+                    <td align="left">Otoka</td>
+                    <td align="left">5 Monica Parkway</td>
+                    <td align="left">Consumer Non-Durables</td>
+                    <td align="left">https://t-online.de</td>
+                    <td align="center" sdval="31" sdnum="1033;">31</td>
+                    <td align="center"><a href="#">+ Informació</a></td>
+                    <td align="center"><a href="#">Edició</a></td>
+                    <td align="center"><a href="#">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td height="17" align="left">Reinger, Mayert and Wisoky</td>
+                    <td align="left">Koygorodok</td>
+                    <td align="left">4969 Oak Lane</td>
+                    <td align="left">Basic Industries</td>
+                    <td align="left">http://tiny.cc</td>
+                    <td align="center" sdval="25" sdnum="1033;">25</td>
+                    <td align="center"><a href="#">+ Informació</a></td>
+                    <td align="center"><a href="#">Edició</a></td>
+                    <td align="center"><a href="#">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td height="17" align="left">Nikolaus-Buckridge</td>
+                    <td align="left">Yutsa</td>
+                    <td align="left">5383 Clemons Trail</td>
+                    <td align="left">Health Care</td>
+                    <td align="left">https://posterous.com</td>
+                    <td align="center" sdval="47" sdnum="1033;">47</td>
+                    <td align="center"><a href="#">+ Informació</a></td>
+                    <td align="center"><a href="#">Edició</a></td>
+                    <td align="center"><a href="#">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td height="17" align="left">Harber, Reilly and Heller</td>
+                    <td align="left">Otoka</td>
+                    <td align="left">5 Monica Parkway</td>
+                    <td align="left">Consumer Non-Durables</td>
+                    <td align="left">https://t-online.de</td>
+                    <td align="center" sdval="31" sdnum="1033;">31</td>
+                    <td align="center"><a href="#">+ Informació</a></td>
+                    <td align="center"><a href="#">Edició</a></td>
+                    <td align="center"><a href="#">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td height="17" align="left">Reinger, Mayert and Wisoky</td>
+                    <td align="left">Koygorodok</td>
+                    <td align="left">4969 Oak Lane</td>
+                    <td align="left">Basic Industries</td>
+                    <td align="left">http://tiny.cc</td>
+                    <td align="center" sdval="25" sdnum="1033;">25</td>
+                    <td align="center"><a href="#">+ Informació</a></td>
+                    <td align="center"><a href="#">Edició</a></td>
+                    <td align="center"><a href="#">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td height="17" align="left">Nikolaus-Buckridge</td>
+                    <td align="left">Yutsa</td>
+                    <td align="left">5383 Clemons Trail</td>
+                    <td align="left">Health Care</td>
+                    <td align="left">https://posterous.com</td>
+                    <td align="center" sdval="47" sdnum="1033;">47</td>
+                    <td align="center"><a href="#">+ Informació</a></td>
+                    <td align="center"><a href="#">Edició</a></td>
+                    <td align="center"><a href="#">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td height="17" align="left">Luettgen-Nader</td>
+                    <td align="left">Santo Ni&Atilde;&plusmn;o</td>
+                    <td align="left">6455 Westend Terrace</td>
+                    <td align="left">Basic Industries</td>
+                    <td align="left">https://bizjournals.com</td>
+                    <td align="center" sdval="22" sdnum="1033;">22</td>
+                    <td align="center"><a href="#">+ Informació</a></td>
+                    <td align="center"><a href="#">Edició</a></td>
+                    <td align="center"><a href="#">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td height="17" align="left">Fay-McGlynn</td>
+                    <td align="left">Qiaosi</td>
+                    <td align="left">7588 2nd Place</td>
+                    <td align="left">Consumer Services</td>
+                    <td align="left">https://photobucket.com</td>
+                    <td align="center" sdval="8" sdnum="1033;">8</td>
+                    <td align="center"><a href="#">+ Informació</a></td>
+                    <td align="center"><a href="#">Edició</a></td>
+                    <td align="center"><a href="#">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td height="17" align="left">Prosacco Inc</td>
+                    <td align="left">Palampal</td>
+                    <td align="left">06845 Kinsman Court</td>
+                    <td align="left">n/a</td>
+                    <td align="left">http://istockphoto.com</td>
+                    <td align="center" sdval="15" sdnum="1033;">15</td>
+                    <td align="center"><a href="#">+ Informació</a></td>
+                    <td align="center"><a href="#">Edició</a></td>
+                    <td align="center"><a href="#">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td height="17" align="left">Balistreri, Parisian and Donnelly</td>
+                    <td align="left">Salegading</td>
+                    <td align="left">4542 Elka Court</td>
+                    <td align="left">Finance</td>
+                    <td align="left">https://ameblo.jp</td>
+                    <td align="center" sdval="1" sdnum="1033;">1</td>
+                    <td align="center"><a href="#">+ Informació</a></td>
+                    <td align="center"><a href="#">Edició</a></td>
+                    <td align="center"><a href="#">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td height="17" align="left">Stokes, Kassulke and Pollich</td>
+                    <td align="left">Shenzhengqiao</td>
+                    <td align="left">69888 Sugar Trail</td>
+                    <td align="left">Basic Industries</td>
+                    <td align="left">https://purevolume.com</td>
+                    <td align="center" sdval="2" sdnum="1033;">2</td>
+                    <td align="center"><a href="#">+ Informació</a></td>
+                    <td align="center"><a href="#">Edició</a></td>
+                    <td align="center"><a href="#">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td height="17" align="left">Reichel Inc</td>
+                    <td align="left">Muli</td>
+                    <td align="left">1156 Union Road</td>
+                    <td align="left">Miscellaneous</td>
+                    <td align="left">https://twitter.com</td>
+                    <td align="center" sdval="12" sdnum="1033;">12</td>
+                    <td align="center"><a href="#">+ Informació</a></td>
+                    <td align="center"><a href="#">Edició</a></td>
+                    <td align="center"><a href="#">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td height="17" align="left">Harber, Reilly and Heller</td>
+                    <td align="left">Otoka</td>
+                    <td align="left">5 Monica Parkway</td>
+                    <td align="left">Consumer Non-Durables</td>
+                    <td align="left">https://t-online.de</td>
+                    <td align="center" sdval="31" sdnum="1033;">31</td>
+                    <td align="center"><a href="#">+ Informació</a></td>
+                    <td align="center"><a href="#">Edició</a></td>
+                    <td align="center"><a href="#">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td height="17" align="left">Reinger, Mayert and Wisoky</td>
+                    <td align="left">Koygorodok</td>
+                    <td align="left">4969 Oak Lane</td>
+                    <td align="left">Basic Industries</td>
+                    <td align="left">http://tiny.cc</td>
+                    <td align="center" sdval="25" sdnum="1033;">25</td>
+                    <td align="center"><a href="#">+ Informació</a></td>
+                    <td align="center"><a href="#">Edició</a></td>
+                    <td align="center"><a href="#">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td height="17" align="left">Nikolaus-Buckridge</td>
+                    <td align="left">Yutsa</td>
+                    <td align="left">5383 Clemons Trail</td>
+                    <td align="left">Health Care</td>
+                    <td align="left">https://posterous.com</td>
+                    <td align="center" sdval="47" sdnum="1033;">47</td>
+                    <td align="center"><a href="#">+ Informació</a></td>
+                    <td align="center"><a href="#">Edició</a></td>
+                    <td align="center"><a href="#">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td height="17" align="left">Luettgen-Nader</td>
+                    <td align="left">Santo Ni&Atilde;&plusmn;o</td>
+                    <td align="left">6455 Westend Terrace</td>
+                    <td align="left">Basic Industries</td>
+                    <td align="left">https://bizjournals.com</td>
+                    <td align="center" sdval="22" sdnum="1033;">22</td>
+                    <td align="center"><a href="#">+ Informació</a></td>
+                    <td align="center"><a href="#">Edició</a></td>
+                    <td align="center"><a href="#">Eliminar</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <ul class="pagination pagination-lg pager paginator-table" id="myPager"></ul>
+    </section>
+    <!--Footer-->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center fixed-bottom">
+        <p class="col-lg-4 mb-0 text-light">
+            <img class="linkLogo" id="linkLogo" aria-current="page" src="../img/logo/Logo_LaboraSQL_White.png"
+                alt="Logo IES Carles Vallbona" width="150" />
+        </p>
+        <p class="col-lg-4 mb-0 text-light text-end">&copy;2023 AUTOTECH SL.</p>
+    </footer>
+</body>
+
+</html>
